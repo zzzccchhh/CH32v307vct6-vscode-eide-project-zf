@@ -68,9 +68,16 @@ ch32v307/
 **方式一：安装 MounRiver Studio（推荐）**
 - 下载地址：http://www.mounriver.com/download
 - 安装时会同时安装工具链和 OpenOCD
-- 安装后工具链路径通常为：
+- 工具链路径：
   ```
   C:\MounRiver\MounRiver_Studio\workspace\tools\OpenOCD\bin\
+  ```
+- OpenOCD 路径：
+  ```
+  C:\MounRiver\MounRiver_Studio\workspace\tools\OpenOCD\bin\openocd.exe
+  ```
+- OpenOCD 配置文件目录：
+  ```
   C:\MounRiver\MounRiver_Studio\workspace\tools\OpenOCD\scripts\
   ```
 
@@ -82,21 +89,6 @@ ch32v307/
 **方式三：使用其他 RISC-V 工具链**
 - 如 WCH 官方提供的工具链
 - 确保 `riscv-none-elf-gcc` 可在命令行中执行
-
-### 4. 安装 OpenOCD
-
-EIDE 支持的 OpenOCD 版本：
-
-| EIDE 版本 | 支持的 OpenOCD |
-|-----------|----------------|
-| ≥3.13.0 | 2024.x |
-| 3.12.x | 2023.x |
-| <3.12.0 | 2022.x |
-
-**安装方式：**
-1. 下载预编译包：https://github.com/xpack-dev-tools/openocd-xpack/releases
-2. 选择 `xpack-openocd-xxx-win32-x64.zip`
-3. 解压到任意目录（如 `D:\Tools\OpenOCD`）
 
 ---
 
